@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+#root {
+  margin: 0 auto;
+  text-align: center;
+  --color-primary: '#1F3C2F'; 
+  --color-accent: '#C4E24B'; 
+  --color-background: '#F5F2EC'; 
+  --color-text: '#1F3C2F';
+}
+
