@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar'
 import Image from '../components/images/delicious-pizza-studio.jpg'
 import PopularMeals from '../components/PopularMeals'
 import TrainingPartners from '../components/TrainingPartners'
 import Footer from '../components/Footer'
+
 
 
 const Home = () => {
@@ -16,8 +18,8 @@ const Home = () => {
         <h1 className='md:text-6xl text-2xl mb-2 font-bold'>Best Food Reciepie Finder</h1>
         <p className='m-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid libero maxime placeat cupiditate pariatur! Totam possimus nam laboriosam libero voluptas similique modi quasi odio nobis sequi.</p>
         <div className='flex gap-5'>
-          <button className='py-3 px-4 mt-2 bg-orange-500 text-white border-0 rounded-3xl hover:pointer'><a href='/random-meal'>Random Meal</a></button>
-          <button className='py-3 px-4 mt-2 bg-white text-orange-500 border-0 rounded-3xl'><a href="/PopularMeals">Popular Meals</a></button>
+          <button className='py-3 px-4 mt-2 bg-orange-500 text-white border-0 rounded-3xl hover:pointer'><Link to="/random-meal">Random Meal</Link></button>
+          <button className='py-3 px-4 mt-2 bg-white text-orange-500 border-0 rounded-3xl'><Link to="PopularMeals">Popular Meals</Link></button>
         </div>
         
       </div>
