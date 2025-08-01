@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="px-5 my-6 text-gray-700 mx-4 md:mx-20">
       <div className="flex justify-between items-center">
-        <h1 className="uppercase text-orange-500 font-bold text-2xl md:text-3xl">
+        <h1 style={{ fontFamily: 'Playfair Display' }} className="uppercase text-orange-500 font-bold text-2xl md:text-3xl">
           Valerie
         </h1>
 

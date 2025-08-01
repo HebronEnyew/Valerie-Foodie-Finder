@@ -38,7 +38,7 @@ const PopularMeals = () => {
   if (loading) return <div className="p-6 text-orange-500">Loading popular meals...</div>;
 
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <div className="grid w-[70%] sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {meals.map((meal) => (
         <div key={meal.idMeal} className="bg-white shadow rounded-xl overflow-hidden">
           <img src={meal.strMealThumb} alt={meal.strMeal} className="w-full h-48 object-cover" />
