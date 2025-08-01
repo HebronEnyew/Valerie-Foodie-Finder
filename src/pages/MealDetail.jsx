@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { fetchCategories, fetchMealsByCategory, fetchMealById } from '../services/mealApi';
 import { FaHeart, FaCocktail } from 'react-icons/fa';
 import { useSearchParams, useNavigate } from 'react-router-dom';
@@ -143,14 +144,12 @@ const MealDetails = () => {
                 </p>
 
                 <div className="flex gap-3 mt-4">
-                  <a
-                    href={`/meal/${meal.idMeal}`}
-                    className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition"
-                  >
-                    <FaCocktail />
-                    View Recipe
-                  </a>
-                  <button
+                    <Link
+                        to={`/meal/${meal.idMeal}`}
+                        className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition"
+                      >
+                    </Link>
+                                  <button
                     onClick={() => toggleFavorite(meal)}
                     className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition ${
                       meal._favorited
