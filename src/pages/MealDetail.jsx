@@ -105,7 +105,6 @@ const MealDetails = () => {
 
   return (
     <div className="p-6 md:px-20 bg-gray-50 min-h-screen">
-      {/* 🧭 Back Button: only if search query exists */}
       {query && (
         <div className="mb-6">
           <button
@@ -145,9 +144,11 @@ const MealDetails = () => {
 
                 <div className="flex gap-3 mt-4">
                     <Link
-                        to={`/meal/${meal.idMeal}`}
-                        className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition"
-                      >
+                      to={`/meal/${meal.idMeal}`}
+                      className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full text-sm hover:bg-orange-600 transition"
+                    >
+                      <FaCocktail />
+                      View Recipe
                     </Link>
                                   <button
                     onClick={() => toggleFavorite(meal)}
